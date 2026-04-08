@@ -70,7 +70,7 @@
       z-index: 100;
     }
     .nav-inner {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 0.5rem 2rem;
       display: flex;
@@ -98,7 +98,7 @@
     }
     .nav-links {
       display: flex;
-      gap: 0.1rem;
+      gap: 0.05rem;
       list-style: none;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
@@ -106,9 +106,9 @@
     }
     .nav-links::-webkit-scrollbar { display: none; }
     .nav-links a {
-      font-size: 11px;
+      font-size: 10px;
       color: var(--ps-black);
-      padding: 0.3rem 0.45rem;
+      padding: 0.22rem 0.32rem;
       border-radius: 2px;
       white-space: nowrap;
       transition: all 180ms;
@@ -191,6 +191,36 @@
       color: var(--ps-black);
       margin: 0;
       line-height: 1.5;
+    }
+
+
+    /* ── Perplexity Research Callout ───────────────────────────────────── */
+    .perp-callout {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      background: #EEF2FF;
+      border-left: 3px solid #1A3C6B;
+      padding: 0.55rem 0.9rem;
+      margin: 0.6rem 0 1.1rem;
+      border-radius: 0 3px 3px 0;
+    }
+    .perp-callout-label {
+      font-size: 9px;
+      font-weight: 800;
+      color: #1A3C6B;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding-top: 2px;
+      flex-shrink: 0;
+    }
+    .perp-callout p {
+      font-size: 11px;
+      color: #444;
+      line-height: 1.55;
+      margin: 0;
+      font-style: italic;
     }
 
     .ps-source {
@@ -401,22 +431,18 @@
     </div>
     <ul class="nav-links" id="navLinks" role="list">
       <li><a href="#thesis">Thesis</a></li>
-      <li><a href="#cheap">Cheap</a></li>
+      <li><a href="#cheap">Why Cheap</a></li>
       <li><a href="#business">Business</a></li>
       <li><a href="#model">Model</a></li>
       <li><a href="#valuation">Valuation</a></li>
-      <li><a href="#fcfshare">FCF/Shr</a></li>
+      <li><a href="#peers">Peers</a></li>
       <li><a href="#volume">Volume</a></li>
       <li><a href="#gateway">Gateway</a></li>
-      <li><a href="#pipeline">Pipeline</a></li>
       <li><a href="#insider">Insider</a></li>
       <li><a href="#catalysts-alt">Catalysts</a></li>
-      <li><a href="#management">Mgmt</a></li>
-      <li><a href="#ai">AI Risk</a></li>
       <li><a href="#bears">Bears</a></li>
-      <li><a href="#rebuttal">Rebuttal</a></li>
-      <li><a href="#timeline">Timeline</a></li>
       <li><a href="#position">Position</a></li>
+      <li><a href="#perplexity">Built</a></li>
     </ul>
     <button class="mobile-menu-btn" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
@@ -554,6 +580,8 @@
     <div class="ps-yellow">
       <p>PitchBook data confirms: FOUR&rsquo;s current market cap (~$3.1B) approximates its June 2020 post-IPO valuation &mdash; despite the company being 5&times; larger, highly profitable, FCF-generative, and operating in 75 countries.</p>
     </div>
+
+    <div class="perp-callout reveal"><span class="perp-callout-label">Perplexity&nbsp;Research</span><p>Perplexity Computer cross-referenced Fiserv Q3 2025, Global Payments Q4 2025, and Shift4&rsquo;s Q4 2025 shareholder letter to document specific competitive displacements: Wynn Resorts, KSL Resorts (40 properties), US Bank Stadium, PGA Tour, Fenway Park, and Coors Field. Each confirms an incumbent processor being replaced by Shift4&rsquo;s integrated stack.</p></div>
     <p class="ps-source">Source: Perplexity Finance, PitchBook company profiles, Shift4 earnings filings</p>
   </div>
 </section>
@@ -845,61 +873,6 @@
 <!-- ============================================================
      6. VALUATION: THREE METHODS
      ============================================================ -->
-
-<!-- ============================================================
-     FCF/SHARE COMPOUNDING
-     ============================================================ -->
-<section class="section" id="fcfshare">
-  <div class="container">
-    <h2 class="ps-title reveal">The Buyback Doubles FCF Per Share in Two Years</h2>
-    <div class="ps-rule reveal"></div>
-    <div class="ps-banner reveal">
-      <p>The $1B buyback retires ~23M shares. Total FCF grows modestly. But FCF <em>per share</em> nearly doubles by FY2027 &mdash; with no EBITDA growth assumed. This is the quasi-LBO mechanic made tangible.</p>
-    </div>
-    <div class="data-table-wrapper reveal">
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Adj. FCF</th>
-            <th>Diluted Shares</th>
-            <th>FCF / Share</th>
-            <th>FCF Yield at $42.56</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>FY2025A</strong></td>
-            <td>$500M</td>
-            <td>73.5M</td>
-            <td>$6.80</td>
-            <td class="td-positive">16.0%</td>
-          </tr>
-          <tr>
-            <td><strong>FY2026E</strong></td>
-            <td>$550M&thinsp;*</td>
-            <td>~60M</td>
-            <td>$9.17</td>
-            <td class="td-positive">21.5%</td>
-          </tr>
-          <tr class="highlight-row">
-            <td><strong>FY2027E</strong></td>
-            <td>$700M</td>
-            <td>~50M</td>
-            <td><strong>$14.00</strong></td>
-            <td><strong>32.9%</strong></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p style="font-size:11px; color:var(--ps-gray); margin-top:0.4rem; font-style:italic;">* FY2026E normalized: adds back ~$60M one-time Global Blue integration costs from the $490&ndash;510M guided figure.</p>
-    <div class="ps-yellow reveal">
-      <p>At $42.56, you are buying $14 of FY2027E FCF per share for <strong>3x</strong>. The stock does not need to re-rate. It only needs to compound.</p>
-    </div>
-    <p class="ps-source reveal">Source: Shift4 Q4 2025 earnings release, author model. Share count assumes $1B buyback completed at avg. ~$43/share retiring ~23M shares.</p>
-  </div>
-</section>
-
 <section id="valuation">
   <div class="container">
     <h2 class="ps-title reveal">Three Independent Methods. One Conclusion.</h2>
@@ -964,6 +937,8 @@
       <p>The most pessimistic DCF scenario (12% WACC, 2% terminal growth) still implies $91/share &mdash; 2.1&times; the current price. All 25 cells in the sensitivity matrix imply upside.</p>
     </div>
 
+
+    <div class="perp-callout reveal"><span class="perp-callout-label">Perplexity&nbsp;Research</span><p>CB Insights M&amp;A database (via Perplexity) surfaced 23 comparable payments transactions since 2019. Median EV/EBITDA: 15&times;. FOUR trades at 6.78&times; &mdash; a 57% discount to sector precedent. All 25 cells of the DCF sensitivity matrix (5 WACC &times; 5 terminal growth scenarios) price FOUR above the $42.56 entry. Bear floor: $91. Base: $149. Bull: $294.</p></div>
     <p class="ps-source reveal">Source: DCF model, CB Insights M&amp;A database</p>
   </div>
 </section>
@@ -1040,6 +1015,8 @@
     <div class="ps-yellow">
       <p>As the macro environment softened in 2025, the spread between FOUR&rsquo;s growth and its end-market&rsquo;s growth actually widened. Structural growth, by definition, does not correlate with the cycle.</p>
     </div>
+
+    <div class="perp-callout reveal"><span class="perp-callout-label">Perplexity&nbsp;Research</span><p>Perplexity Finance GRLNF and E2E volume data traced quarterly from Q1 2022 through Q4 2025, then cross-referenced with US hotel RevPAR (STR/CoStar) to isolate organic volume acceleration from acquired volume. Result: Shift4&rsquo;s organic payment volume is growing faster than the underlying hospitality market &mdash; confirming share gain, not just market beta.</p></div>
     <p class="ps-source">Source: Shift4 quarterly earnings filings (GRLNF/E2E volume data), CoStar/STR US Hotel RevPAR benchmarks</p>
   </div>
 </section>
@@ -1075,61 +1052,6 @@
 <!-- ============================================================
      10. INSIDER CONVICTION
      ============================================================ -->
-
-<!-- ============================================================
-     WORLDLINE/BAMBORA PIPELINE
-     ============================================================ -->
-<section class="section" id="pipeline">
-  <div class="container">
-    <h2 class="ps-title reveal">280K Unmodeled Merchants: The Next Conversion Wave</h2>
-    <div class="ps-rule reveal"></div>
-    <div class="ps-banner reveal">
-      <p>Bambora and the pending Worldline NA deal add 280K gateway-only merchants not yet in the $35B backlog. At the same 4&ndash;5&times; E2E uplift driving current growth, this represents $250M+ of incremental GRLNF &mdash; none of it in guidance, none of it in consensus.</p>
-    </div>
-    <div class="data-table-wrapper reveal">
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Acquisition</th>
-            <th>Merchants</th>
-            <th>Status</th>
-            <th>Region</th>
-            <th>Est. Incr. GRLNF at Full Conversion</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Bambora (SmartPay)</td>
-            <td>140K</td>
-            <td>Closed Q4 2025</td>
-            <td>ANZ</td>
-            <td class="td-positive">~$120M</td>
-          </tr>
-          <tr>
-            <td>Worldline NA</td>
-            <td>140K</td>
-            <td>Pending close</td>
-            <td>North America</td>
-            <td class="td-positive">~$130M</td>
-          </tr>
-          <tr class="highlight-row">
-            <td><strong>Total Pipeline</strong></td>
-            <td><strong>280K</strong></td>
-            <td>&mdash;</td>
-            <td>2 regions</td>
-            <td><strong>~$250M+</strong></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p style="font-size:11px; color:var(--ps-gray); margin-top:0.4rem; font-style:italic;">Conversion estimate: 280K merchants &times; $250K avg. annual volume &times; 45bps E2E spread uplift. Assumes same playbook applied to Vectron (65K merchants, already converting).</p>
-    <div class="ps-yellow reveal">
-      <p>The existing $35B backlog drives $141M of incremental GRLNF. Bambora + Worldline NA is an equally sized second wave just entering the funnel.</p>
-    </div>
-    <p class="ps-source reveal">Source: Shift4 Q4 2025 earnings call, Bambora / SmartPay acquisition press release (Q4 2025), Worldline NA pending deal announcement. Author conversion model.</p>
-  </div>
-</section>
-
 <section id="insider">
   <div class="container">
     <h2 class="ps-title reveal">The Founder Has Purchased $46M of Stock at Every Major Dip</h2>
@@ -1157,6 +1079,8 @@
       <p>Two buyers, same conclusion, at the same time: management executing a $1B buyback at 6&times; EV/EBITDA while the founder purchases personally at the lows.</p>
     </div>
 
+
+    <div class="perp-callout reveal"><span class="perp-callout-label">Perplexity&nbsp;Research</span><p>Perplexity Computer parsed 10 SEC Form 4 filings for Isaacman (2020&ndash;2026) via SEC EDGAR, reconstructing a weighted average cost basis of $63.56 across $46.1M in open-market purchases. His most recent purchase: $4M at $44 in March 2026 &mdash; below every Wall Street price target on record.</p></div>
     <p class="ps-source reveal">Source: SEC Form 4 filings, OpenInsider.com</p>
   </div>
 </section>
@@ -1362,7 +1286,7 @@
     <div class="ps-rule reveal"></div>
 
     <div class="ps-banner reveal">
-      <p>The entire bear thesis is: elevated leverage and an unproven acquisition. Both are temporary, measurable, and resolving on a calendar that is public knowledge.</p>
+      <p>Five bear arguments exist: elevated leverage, Global Blue cross-sell risk, value trap optics, CEO succession, and a reflexive shareholder investigation. All five have specific, data-driven answers.</p>
     </div>
 
     <div class="ps-argument reveal">
@@ -1379,25 +1303,13 @@
     </div>
     <div class="ps-argument reveal">
       <p class="bear-claim">&#9654; <strong>Bear:</strong> Lauber is unproven as standalone CEO mid-integration.</p>
-      <p class="counter-response" style="margin-left:1.5rem; color:#4A7B40;"><strong>Counter:</strong> Lauber has been President/CSO since 2018, running strategy through the entire hypergrowth phase. EBITDA margins held 49%+ through Global Blue integration. Isaacman bought $4M at the lows in March 2026.</p>
+      <p class="counter-response" style="margin-left:1.5rem; color:#4A7B40;"><strong>Counter:</strong> Taylor Lauber has been President and CSO since 2018, personally architecting every major deal &mdash; Hospitality Network, The Giving Block, and Global Blue. He ran strategy through the full hypergrowth phase; Isaacman ran the microphone. Isaacman remains Executive Chairman with ~23.5M shares (~$1B position) and full board control &mdash; he is unencumbered, not absent. EBITDA margins held 49%+ through the transition. The actual succession risk would be a CEO hired from outside the organization. That didn&rsquo;t happen.</p>
     </div>
-
 
     <div class="ps-argument reveal">
-      <p class="bear-claim">&#9654; <strong>Bear:</strong> Blended spread has compressed from 78bps to 61bps since IPO &mdash; pricing power is structurally declining.</p>
-      <p class="counter-response" style="margin-left:1.5rem; color:#4A7B40;"><strong>Counter &mdash; Mix-Shift, Not Price Compression:</strong> Every basis point of decline traces to enterprise and international volume (stadiums, Global Blue) growing faster than SMB &mdash; not to lower rates charged to existing merchants. Spread per vertical is stable. Management guided 60bps+ for FY2026 explicitly. The compression ends here because the mix is now set.
-      <br><br>
-      <span style="font-size:13px; color:var(--ps-black);">
-        <strong>Vertical&ensp;&ensp;&ensp;&ensp;&ensp;~Spread&ensp;&ensp;&ensp;2025 Volume Mix&ensp;&ensp;&ensp;Trend</strong><br>
-        Restaurant&ensp;&ensp;&ensp;&ensp;&ensp;~85bps&ensp;&ensp;&ensp;&ensp;~25%&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Stable<br>
-        Hotel / Hospitality&ensp;~65bps&ensp;&ensp;&ensp;&ensp;~35%&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Stable<br>
-        Stadium / Enterprise&ensp;~45bps&ensp;&ensp;&ensp;&ensp;~30%&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Growing (mix dilutive)<br>
-        Global Blue / Intl&ensp;&ensp;~30bps&ensp;&ensp;&ensp;&ensp;~10%&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;New in 2025 (most dilutive)<br>
-        <strong>Blended&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;~61bps&ensp;&ensp;&ensp;&ensp;100%&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Floor reached per mgmt</strong>
-      </span>
-      </p>
+      <p class="bear-claim">&#9654; <strong>Bear:</strong> Purcell &amp; Lefkowitz LLP filed a shareholder investigation (April 2026) into Shift4&rsquo;s directors over potential fiduciary breaches related to recent corporate actions.</p>
+      <p class="counter-response" style="margin-left:1.5rem; color:#4A7B40;"><strong>Counter:</strong> This is reflexive law firm boilerplate &mdash; filed automatically after large stock declines, almost universally resulting in no material action. The underlying concern (Global Blue acquisition terms) is already embedded in the 6&times; EV/EBITDA multiple. The question is not whether the deal was perfectly priced; it is whether Global Blue compounds FCF from here. The DCC economics, 70K SMB cross-sell target, and zero synergy in FY2026 guidance suggest it does.</p>
     </div>
-
     <div class="ps-yellow reveal">
       <p>True downside scenario requires simultaneous EBITDA miss of 15% AND multiple compression to 5&times;. That implies ~$14/share &mdash; a $28 downside vs. $107&ndash;$242 upside.</p>
     </div>
@@ -1405,64 +1317,6 @@
     <p class="ps-source reveal">Source: Author analysis, Shift4 earnings filings</p>
   </div>
 </section>
-
-
-<!-- ============================================================
-     17. ORGANIC GROWTH REBUTTAL
-     ============================================================ -->
-<section id="rebuttal">
-  <div class="container">
-    <h2 class="ps-title reveal">Countering the &ldquo;No Organic Growth&rdquo; Argument</h2>
-    <div class="ps-rule reveal"></div>
-
-    <div class="ps-banner reveal">
-      <p>The bear claim that Shift4 has &ldquo;no organic growth&rdquo; is imprecise at best and demonstrably wrong at worst. It conflates the <em>source</em> of Shift4&rsquo;s merchant base with the <em>incremental revenue</em> from deepening those relationships &mdash; two fundamentally different things. Five independent pillars dismantle this argument.</p>
-    </div>
-
-    <!-- PILLAR 1 -->
-    <div class="ps-argument reveal">
-      <p class="bear-claim">&#9654; <strong>Bear:</strong> Shift4&rsquo;s growth is entirely driven by acquisitions &mdash; strip them out and there is nothing left.</p>
-      <p class="counter-response" style="margin-left:1.5rem; color:#4A7B40;"><strong>Pillar I &mdash; Management Has Explicitly Disclosed Organic Numbers:</strong> FY2024 organic GRLNF growth was &ldquo;well north of 25%&rdquo; (Q2 2024 SEC filing). Q3 2025 organic growth: 18% (first explicit numerical disclosure). FY2025 excluding Global Blue &amp; SmartPay: <strong>23% GRLNF growth</strong> (Q4 2025 earnings call). FY2026 Americas guide &mdash; management&rsquo;s own label for its &ldquo;most mature&rdquo; market with &ldquo;minimal M&amp;A annualization impact&rdquo;: <strong>mid-teens GRLNF growth</strong>. The bear must explain away Shift4&rsquo;s own disclosures.</p>
-    </div>
-
-    <!-- PILLAR 2 -->
-    <div class="ps-argument reveal">
-      <p class="bear-claim">&#9654; <strong>Bear:</strong> The &ldquo;organic&rdquo; label is misleading &mdash; those conversions come from acquired merchants, not genuine market share gains.</p>
-      <p class="counter-response" style="margin-left:1.5rem; color:#4A7B40;"><strong>Pillar II &mdash; Gateway-to-E2E Conversion Is Organic by Every Financial Definition:</strong> Converting a gateway-only merchant to end-to-end processing generates <strong>4&ndash;5&times; the per-merchant revenue on identical card volume at zero M&amp;A cost</strong> (Stone Mountain Research). No new acquisition check is written. No new merchant is won. The conversion engine alone delivered <strong>$32.9B in E2E volume growth in the first 9 months of 2025</strong> (Q3 2025 10-Q). Picolinie Capital framed this precisely: <em>&ldquo;That revenue may stem from past acquisitions, but it is now effectively organic &mdash; no further M&amp;A needed to achieve it.&rdquo;</em></p>
-    </div>
-
-    <!-- PILLAR 3 -->
-    <div class="ps-argument reveal">
-      <p class="bear-claim">&#9654; <strong>Bear:</strong> Future growth requires more acquisitions &mdash; the business can&rsquo;t grow standalone.</p>
-      <p class="counter-response" style="margin-left:1.5rem; color:#4A7B40;"><strong>Pillar III &mdash; $35B Signed-But-Not-Live Backlog Is Pre-Contracted Organic Revenue:</strong> As of Q3 2025, Shift4 held <strong>$35B+ of signed but not yet live merchant volume</strong>, up from $25B in Q2 2024. Management activated $6B+ in new volume in Q3 2025 alone. This pipeline requires zero new sales, zero new M&amp;A, and zero capital to realize. Even if Shift4 stopped all acquisitions and new sales activity entirely, this backlog alone would fund multiple years of double-digit volume growth.</p>
-    </div>
-
-    <!-- PILLAR 4 -->
-    <div class="ps-argument reveal">
-      <p class="bear-claim">&#9654; <strong>Bear:</strong> SkyTab growth is just converting acquired merchant lists &mdash; not a real product business.</p>
-      <p class="counter-response" style="margin-left:1.5rem; color:#4A7B40;"><strong>Pillar IV &mdash; SkyTab Is a 100% Internally Built Product at Near-Zero Penetration:</strong> SkyTab was built internally &mdash; zero acquisition cost. Subscription revenues: <strong>$341M in FY2024 (+90% YoY), $454M in FY2025 (+33% YoY)</strong>, carrying no network fee pass-through. Over 55,000 installs since beta, far exceeding Shift4&rsquo;s own 30,000 target. Restaurant and hospitality penetration remains in the <strong>low single digits</strong>. Toast, the closest comparable, serves ~127,000 locations. SkyTab&rsquo;s organic runway is measured in multiples of current revenue.</p>
-    </div>
-
-    <!-- PILLAR 5 -->
-    <div class="ps-argument reveal">
-      <p class="bear-claim">&#9654; <strong>Bear:</strong> Even bulls admit organic growth is decelerating &mdash; from 20% to low double digits.</p>
-      <p class="counter-response" style="margin-left:1.5rem; color:#4A7B40;"><strong>Pillar V &mdash; The Bears Don&rsquo;t Actually Claim Zero Organic Growth:</strong> BTIG cut its target but kept a Buy, explicitly stating &ldquo;predictions of minimal future growth overlook the numerous avenues available.&rdquo; Raymond James downgraded only to &ldquo;Outperform&rdquo; (still bullish) at $67. Deutsche Bank &mdash; the most bearish voice &mdash; warned organic could fall from 18% to &ldquo;mid-teens,&rdquo; not zero. The worst-case consensus is low-double-digit organic growth on a $2.5B+ GRLNF base: that is <strong>$275&ndash;325M of organic revenue addition per year from the existing business alone</strong>, before any new M&amp;A.</p>
-    </div>
-
-    <!-- Picolinie Capital Math Callout -->
-    <div class="ps-yellow reveal" style="border-left: 3px solid var(--accent); background: rgba(0,196,161,0.06); border-color: rgba(0,196,161,0.5);">
-      <p><strong>The Picolinie Capital Math &mdash; The Floor Argument:</strong> Strip out every acquisition-driven conversion entirely. Assume Shift4 never does another deal and loses all M&amp;A-adjacent revenue growth. The payments industry still grows at GDP+. Shift4 is still a market share gainer with 98%+ merchant retention. Result: <strong>high single-digit &ldquo;pure&rdquo; organic growth floor</strong> (Picolinie Capital, Feb 2026). A business with high-single-digit organic growth, 49% EBITDA margins, $500M FCF, and a $35B signed backlog does not trade at a single-digit cash flow multiple. The discount is a sentiment artifact, not a fundamental verdict.</p>
-    </div>
-
-    <!-- Synthesis callout -->
-    <div class="ps-banner reveal" style="margin-top: 1.5rem; border-color: rgba(232,184,75,0.4); background: rgba(232,184,75,0.06);">
-      <p><strong>The Synthesis:</strong> Shift4&rsquo;s acquisition playbook is its go-to-market strategy, not a substitute for organic growth. Every high-conviction acquirer &mdash; Constellation Software, Roper Technologies, Danaher &mdash; uses M&amp;A as a distribution mechanism, then generates organic growth on top. The question is whether the organic engine works. Management disclosures, analyst consensus, and a $35B contracted backlog give the same answer: unambiguously yes.</p>
-    </div>
-
-    <p class="ps-source reveal">Sources: Shift4 Q2 2024 SEC Filing, Q3 2025 10-Q, Q4 2025 Earnings Call, Stone Mountain Research (Mar 2026), Picolinie Capital (Feb 2026), BTIG Research (Mar 2026)</p>
-  </div>
-</section>
-
 
 <!-- ============================================================
      17. CATALYST TIMELINE
