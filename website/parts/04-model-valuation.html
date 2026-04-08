@@ -1,0 +1,252 @@
+
+<!-- ============================================================
+     4. FINANCIAL MODEL
+     ============================================================ -->
+<section class="section" id="model">
+  <div class="container">
+    <div class="section-label reveal">FINANCIAL MODEL</div>
+    <h2 class="section-title reveal">Operating Model &amp; Cash Waterfall</h2>
+    <div class="ps-banner reveal">
+      <p>3.73&times; net leverage in Q1 2026 is the deliberate peak. Every quarter thereafter, leverage declines mechanically &mdash; reaching sub-3&times; by Q4 2026 and 2.00&times; by Q4 2027 &mdash; while retiring 15% of shares outstanding.</p>
+    </div>
+
+    <h3 class="sub-heading reveal">Deleverage: 3.73x &rarr; 2.00x in 8 Quarters</h3>
+    <p class="section-subtitle reveal">Full quarterly cash waterfall &mdash; while retiring 15% of shares outstanding.</p>
+
+    <div class="data-table-wrapper reveal">
+      <table class="data-table">
+        <thead>
+          <tr><th>Quarter</th><th>Leverage</th><th>Cash</th><th>LTM EBITDA</th><th>FCF</th><th>Key Event</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="td-bold">Q4 25A</td><td>3.69x</td><td>$964M</td><td>$970M</td><td>&mdash;</td><td></td></tr>
+          <tr class="pain-row"><td>Q1 26E</td><td>3.73x</td><td>$556M</td><td>$1,070M</td><td>+$70M</td><td>Pain Quarter: $478M cash drain</td></tr>
+          <tr><td>Q2 26E</td><td>3.53x</td><td>$414M</td><td>$1,170M</td><td>+$148M</td><td>$1B buyback COMPLETE</td></tr>
+          <tr class="highlight-row"><td>Q3 26E</td><td>3.06x</td><td>$561M</td><td>$1,302M</td><td>+$222M</td><td>Peak FCF quarter</td></tr>
+          <tr class="highlight-row"><td style="font-weight: 700;">Q4 26E</td><td style="color: var(--gold); font-weight: 900;">2.99x</td><td>$631M</td><td>$1,307M</td><td>+$145M</td><td>SUB-3x ACHIEVED</td></tr>
+          <tr><td>Q1 27E</td><td>2.72x</td><td>$746M</td><td>$1,395M</td><td>+$115M</td><td></td></tr>
+          <tr><td>Q2 27E</td><td>2.38x</td><td>$936M</td><td>$1,514M</td><td>+$190M</td><td>Conv note prep complete</td></tr>
+          <tr><td>Q3 27E</td><td>2.20x</td><td>$573M</td><td>$1,518M</td><td>+$270M</td><td>$632M conv note REPAID</td></tr>
+          <tr class="highlight-row"><td style="font-weight: 700;">Q4 27E</td><td style="color: var(--gold); font-weight: 900;">2.00x</td><td>$748M</td><td>$1,580M</td><td>+$175M</td><td>Near investment grade</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-grid mt-8">
+      <div class="card reveal" style="border-top: 2px solid var(--negative);">
+        <h4 style="font-size: 12px; color: var(--negative); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; font-weight: 700;">Q1 2026 &mdash; The Pain Quarter</h4>
+        <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">$478M total cash drain: Bambora ($84M) + TRA final payment ($139M &mdash; final <span style="color: var(--accent); font-weight: 600;">ever</span>) + buyback ($284M). <strong style="color: var(--text-primary);">Never this bad again.</strong></p>
+      </div>
+      <div class="card card--accent reveal" style="border-top: 2px solid var(--accent);">
+        <h4 style="font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; font-weight: 700;">Q2 2026 &mdash; Buyback Sprint</h4>
+        <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Remaining ~$440M deployed at ~$45 avg = ~9.8M shares retired. $1B authorization <strong style="color: var(--accent);">COMPLETE</strong>. Total: ~18.8M shares = 15% of common eliminated.</p>
+      </div>
+    </div>
+
+    <div class="chart-wrap reveal mt-8">
+      <canvas id="deleverageChart"></canvas>
+    </div>
+
+    <div class="divider reveal"></div>
+
+    <h3 class="sub-heading reveal">FCF Per Share Compounding</h3>
+    <p class="section-subtitle reveal">FCF grows 50% + shares drop 15% = FCF/share up 75% in 2 years.</p>
+
+    <div class="data-table-wrapper reveal">
+      <table class="data-table">
+        <thead><tr><th></th><th>FY25A</th><th>FY26E</th><th>FY27E</th></tr></thead>
+        <tbody>
+          <tr><td class="td-bold">Free Cash Flow</td><td>$500M</td><td>$585M</td><td>$750M</td></tr>
+          <tr><td class="td-bold">Common Shares</td><td>86.5M</td><td>73.5M</td><td>74.0M</td></tr>
+          <tr><td class="td-bold">FD (w/Pref)</td><td>96.5M</td><td>83.5M</td><td>84.0M</td></tr>
+          <tr class="highlight-row"><td>FCF / Common Share</td><td>$5.78</td><td>$7.96</td><td>$10.14</td></tr>
+          <tr><td class="td-bold">YoY Growth</td><td>&mdash;</td><td class="td-positive">+37.7%</td><td class="td-positive">+27.4%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="chart-wrap reveal mt-8">
+      <canvas id="fcfChart"></canvas>
+    </div>
+
+    <div class="ps-source">Source: Shift4 Payments earnings filings, management guidance (Q4 2025), Perplexity Finance (perplexity.ai/finance/FOUR)</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. VALUATION
+     ============================================================ -->
+<section class="section" id="valuation">
+  <div class="container">
+    <div class="section-label reveal">VALUATION</div>
+    <h2 class="section-title reveal">Three Methods. One Answer.</h2>
+    <div class="ps-banner reveal">
+      <p>Three independent valuation methods &mdash; DCF ($149/share floor), sum-of-parts ($97 at today's depressed multiples), and precedent transactions ($196 at median comparable deal) &mdash; all imply the same conclusion: the current price of $42.56 is severely dislocated from intrinsic value.</p>
+    </div>
+
+    <h3 class="sub-heading reveal">What the Market Sees vs. Reality</h3>
+    <div class="comparison-grid reveal">
+      <div class="comparison-item">
+        <div class="comparison-left"><div class="comp-label">Market Sees</div><div class="comp-text">3.7x leverage &mdash; scary</div></div>
+        <div class="comparison-right"><div class="comp-label">Reality</div><div class="comp-text">Peaks Q1, drops every quarter for 2 years</div></div>
+      </div>
+      <div class="comparison-item">
+        <div class="comparison-left"><div class="comp-label">Market Sees</div><div class="comp-text">GAAP P/E of 18x</div></div>
+        <div class="comparison-right"><div class="comp-label">Reality</div><div class="comp-text">FCF yield 14.1%, PEG 0.24</div></div>
+      </div>
+      <div class="comparison-item">
+        <div class="comparison-left"><div class="comp-label">Market Sees</div><div class="comp-text">Complex cap structure</div></div>
+        <div class="comparison-right"><div class="comp-label">Reality</div><div class="comp-text">TRA eliminated forever, deleverage on autopilot</div></div>
+      </div>
+      <div class="comparison-item">
+        <div class="comparison-left"><div class="comp-label">Market Sees</div><div class="comp-text">M&amp;A integration risk</div></div>
+        <div class="comparison-right"><div class="comp-label">Reality</div><div class="comp-text">Same playbook executed 10+ times successfully</div></div>
+      </div>
+    </div>
+
+    <div class="val-stats reveal mt-8">
+      <div class="val-stat"><div class="val-stat-value">+29%</div><div class="val-stat-label">GRLNF Growth</div></div>
+      <div class="val-stat"><div class="val-stat-value">$1,190M</div><div class="val-stat-label">EBITDA</div></div>
+      <div class="val-stat"><div class="val-stat-value">$500M</div><div class="val-stat-label">FCF</div></div>
+      <div class="val-stat"><div class="val-stat-value gold">6.78x</div><div class="val-stat-label">EV/EBITDA</div></div>
+      <div class="val-stat"><div class="val-stat-value gold">14.1%</div><div class="val-stat-label">FCF Yield</div></div>
+      <div class="val-stat"><div class="val-stat-value gold">52</div><div class="val-stat-label">Rule of 40 Score</div></div>
+    </div>
+
+    <div class="divider reveal"></div>
+
+    <h3 class="sub-heading reveal">Sum-of-Parts &mdash; Zero Synergy, Today's Multiples</h3>
+    <div class="data-table-wrapper reveal">
+      <table class="data-table">
+        <thead><tr><th>Segment</th><th>FY26E EBITDA</th><th>Multiple</th><th>Segment EV</th><th>Comp Basis</th></tr></thead>
+        <tbody>
+          <tr><td>Americas Payments (~75%)</td><td>$893M</td><td>9x</td><td>$8.0B</td><td>Fiserv/Heartland processing</td></tr>
+          <tr><td>International / Global Blue (~20%)</td><td>$238M</td><td>7x</td><td>$1.7B</td><td>Worldline DCC &mdash; integration discount</td></tr>
+          <tr><td>Software / SkyTab / Lighthouse (~5%)</td><td>$60M</td><td>15x</td><td>$0.9B</td><td>Agilysys 25x, Lightspeed &mdash; blended</td></tr>
+          <tr style="border-top: 2px solid var(--accent); font-weight: 700; color: var(--text-primary);"><td><strong>Total Enterprise Value</strong></td><td><strong>$1,191M</strong></td><td><strong>8.9x blended</strong></td><td><strong>$10.6B</strong></td><td></td></tr>
+          <tr><td colspan="3">Less: Net Debt (FY26E)</td><td>($3.5B)</td><td></td></tr>
+          <tr style="color: var(--gold); font-weight: 700;"><td colspan="3">Implied Price (73.5M shares)</td><td>$97/share</td><td>+128% at today's depressed multiples</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider reveal"></div>
+
+    <h3 class="sub-heading reveal">DCF &mdash; All 25 Cells Imply Upside</h3>
+    <div class="prose reveal mb-6">
+      <p>Base case: $149/share at 10% WACC, 3% terminal growth. Most pessimistic scenario ($91) is still 2.1x current price.</p>
+    </div>
+
+    <div class="data-table-wrapper reveal mb-8">
+      <table class="data-table">
+        <thead><tr><th>Year</th><th>FCF ($M)</th><th>YoY Growth</th><th>Discount Factor</th><th>PV ($M)</th></tr></thead>
+        <tbody>
+          <tr><td>FY2026E</td><td>$585M</td><td>+17.2%</td><td>0.909</td><td>$532M</td></tr>
+          <tr><td>FY2027E</td><td>$750M</td><td>+28.2%</td><td>0.826</td><td>$620M</td></tr>
+          <tr><td>FY2028E</td><td>$900M</td><td>+20.0%</td><td>0.751</td><td>$676M</td></tr>
+          <tr><td>FY2029E</td><td>$1,062M</td><td>+18.0%</td><td>0.683</td><td>$725M</td></tr>
+          <tr><td>FY2030E</td><td>$1,221M</td><td>+15.0%</td><td>0.621</td><td>$758M</td></tr>
+          <tr style="border-top: 2px solid var(--accent); color: var(--text-primary); font-weight: 700;"><td colspan="4"><strong>Enterprise Value (10% WACC, 3% TGR)</strong></td><td><strong>$14,467M</strong></td></tr>
+          <tr style="color: var(--gold); font-weight: 700;"><td colspan="4"><strong>Implied Price / Common Share</strong></td><td><strong>$149</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 style="font-size: 11px; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;" class="reveal">WACC / Terminal Growth Rate Sensitivity</h4>
+    <div class="data-table-wrapper reveal mb-8">
+      <table class="data-table" style="text-align: center;">
+        <thead><tr><th>WACC \ TGR</th><th>2.0%</th><th>2.5%</th><th>3.0% &#9733;</th><th>3.5%</th><th>4.0%</th></tr></thead>
+        <tbody>
+          <tr><td>8%</td><td>$192</td><td>$211</td><td>$233</td><td>$260</td><td>$294</td></tr>
+          <tr><td>9%</td><td>$156</td><td>$169</td><td>$184</td><td>$202</td><td>$223</td></tr>
+          <tr><td><strong>10% &#9733;</strong></td><td>$129</td><td>$138</td><td class="dcf-base">$149 &#9733;</td><td>$162</td><td>$176</td></tr>
+          <tr><td>11%</td><td>$108</td><td>$115</td><td>$123</td><td>$132</td><td>$143</td></tr>
+          <tr><td>12%</td><td class="dcf-floor">$91 &#9660;</td><td>$97</td><td>$103</td><td>$110</td><td>$117</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size: 11px; color: var(--text-faint);" class="reveal">&#9733; = base case | &#9660; = most bearish &mdash; 25/25 cells above $42.56</p>
+
+    <div class="divider reveal"></div>
+
+    <h3 class="sub-heading reveal">Precedent Transactions &mdash; Median 15x vs. FOUR at 6x</h3>
+    <div class="data-table-wrapper reveal mb-6">
+      <table class="data-table">
+        <thead><tr><th>Target</th><th>Acquirer</th><th>Year</th><th>EV</th><th>EV/EBITDA</th></tr></thead>
+        <tbody>
+          <tr><td>WorldPay</td><td>Global Payments</td><td>2025</td><td>$24B</td><td>~12x</td></tr>
+          <tr><td>EVO Payments</td><td>Global Payments</td><td>2023</td><td>$4.0B</td><td>~14x</td></tr>
+          <tr><td>Heartland Payment Systems</td><td>Global Payments</td><td>2016</td><td>$4.3B</td><td>~26x</td></tr>
+          <tr><td>Verifone</td><td>Francisco Partners</td><td>2018</td><td>$3.4B</td><td>~16x</td></tr>
+          <tr><td>First Data</td><td>Fiserv</td><td>2019</td><td>$22B</td><td>~12x</td></tr>
+          <tr><td>Ingenico</td><td>Worldline</td><td>2020</td><td>$8.6B</td><td>~20x</td></tr>
+          <tr style="border-top: 2px solid var(--accent); color: var(--gold); font-weight: 700;"><td><strong>Precedent Median</strong></td><td></td><td></td><td></td><td><strong>~15x</strong></td></tr>
+          <tr style="color: var(--negative); font-weight: 700;"><td><strong>FOUR Today</strong></td><td></td><td>2026</td><td>$8.1B</td><td><strong>6.78x</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider reveal"></div>
+
+    <h3 class="sub-heading reveal">Peer Comps</h3>
+    <div class="data-table-wrapper reveal mb-8">
+      <table class="data-table">
+        <thead><tr><th>Ticker</th><th>Price</th><th>Mkt Cap</th><th>P/E</th><th>EV/EBITDA</th><th>EV/Sales</th><th>FCF Yield</th><th>EBITDA Margin</th></tr></thead>
+        <tbody>
+          <tr class="four-row"><td>FOUR</td><td>$42.56</td><td>$4.3B</td><td>39.4x</td><td>10.1x</td><td style="color: var(--gold) !important; font-weight: 900 !important;">1.9x</td><td style="color: var(--gold) !important; font-weight: 900 !important;">12.2%</td><td>18.7%</td></tr>
+          <tr><td class="td-bold">TOST</td><td>$26.07</td><td>$15.4B</td><td>46.6x</td><td>53.2x</td><td>3.1x</td><td>2.9%</td><td>5.8%</td></tr>
+          <tr><td class="td-bold">GPN</td><td>$65.36</td><td>$15.5B</td><td>16.67x</td><td>9.3x</td><td>4.0x</td><td>11.1%</td><td>42.8%</td></tr>
+          <tr><td class="td-bold">FIS</td><td>$45.17</td><td>$23.4B</td><td>61.9x</td><td>12.4x</td><td>4.2x</td><td>7.2%</td><td>33.9%</td></tr>
+          <tr><td class="td-bold">FISV</td><td>$55.45</td><td>$29.8B</td><td>8.6x</td><td>7.1x</td><td>3.0x</td><td>12.0%</td><td>42.6%</td></tr>
+          <tr><td class="td-bold">PYPL</td><td>$44.63</td><td>$41.8B</td><td>8.3x</td><td>7.6x</td><td>1.6x</td><td>10.4%</td><td>21.2%</td></tr>
+          <tr><td class="td-bold">ADYEN</td><td>&euro;863.70</td><td>&euro;27.2B</td><td>25.7x</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider reveal"></div>
+
+    <h3 class="sub-heading reveal">Interactive Valuation Calculator</h3>
+    <p class="prose reveal mb-6">Adjust assumptions to stress-test the thesis. Default assumptions are conservative.</p>
+
+    <div class="calculator reveal">
+      <div class="slider-group">
+        <div class="slider-header">
+          <span class="slider-label">FY2030 EBITDA</span>
+          <span class="slider-value" id="ebitda-display">$1.85B</span>
+        </div>
+        <input type="range" id="ebitda-slider" min="1500" max="2500" value="1850" step="50">
+      </div>
+      <div class="slider-group">
+        <div class="slider-header">
+          <span class="slider-label">Exit Multiple (EV/EBITDA)</span>
+          <span class="slider-value" id="multiple-display">10.0x</span>
+        </div>
+        <input type="range" id="multiple-slider" min="8" max="15" value="10" step="0.5">
+      </div>
+      <div class="slider-group">
+        <div class="slider-header">
+          <span class="slider-label">Shares Outstanding (M)</span>
+          <span class="slider-value" id="shares-display">63M</span>
+        </div>
+        <input type="range" id="shares-slider" min="60" max="80" value="63" step="1">
+      </div>
+      <div class="calc-results">
+        <div class="calc-result-item">
+          <div class="calc-result-label">Implied Price</div>
+          <div class="calc-result-value" id="calc-price">$284</div>
+        </div>
+        <div class="calc-result-item">
+          <div class="calc-result-label">MOIC</div>
+          <div class="calc-result-value" id="calc-moic">6.0x</div>
+        </div>
+        <div class="calc-result-item">
+          <div class="calc-result-label">5yr IRR</div>
+          <div class="calc-result-value" id="calc-irr">43%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ps-source">Source: Perplexity Finance, CB Insights M&amp;A database, Capital IQ precedent transactions</div>
+  </div>
+</section>

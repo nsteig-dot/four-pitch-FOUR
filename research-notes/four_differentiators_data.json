@@ -1,0 +1,165 @@
+{
+  "insider": {
+    "purchases": [
+      {
+        "date": "2020-09-15",
+        "shares": 85000,
+        "price": 55.2,
+        "value": 4.7,
+        "label": "Isaacman: $4.7M @ $55"
+      },
+      {
+        "date": "2021-03-10",
+        "shares": 65000,
+        "price": 73.5,
+        "value": 4.8,
+        "label": "Isaacman: $4.8M @ $74"
+      },
+      {
+        "date": "2022-11-15",
+        "shares": 120000,
+        "price": 41.8,
+        "value": 5.0,
+        "label": "Isaacman: $5.0M @ $42"
+      },
+      {
+        "date": "2024-05-14",
+        "shares": 85916,
+        "price": 67.09,
+        "value": 5.76,
+        "label": "Isaacman: $5.8M @ $67"
+      },
+      {
+        "date": "2024-05-23",
+        "shares": 39135,
+        "price": 64.04,
+        "value": 2.51,
+        "label": "Isaacman: $2.5M @ $64"
+      },
+      {
+        "date": "2024-06-06",
+        "shares": 29669,
+        "price": 69.23,
+        "value": 2.05,
+        "label": "Isaacman: $2.1M @ $69"
+      },
+      {
+        "date": "2024-06-14",
+        "shares": 14486,
+        "price": 69.4,
+        "value": 1.01,
+        "label": "Isaacman: $1.0M @ $69"
+      },
+      {
+        "date": "2025-08-08",
+        "shares": 196426,
+        "price": 82.81,
+        "value": 16.3,
+        "label": "Isaacman: $16.3M @ $83 \u2190 Largest single buy"
+      },
+      {
+        "date": "2026-03-02",
+        "shares": 45693,
+        "price": 43.83,
+        "value": 2.0,
+        "label": "Isaacman: $2.0M @ $44"
+      },
+      {
+        "date": "2026-03-10",
+        "shares": 43827,
+        "price": 45.75,
+        "value": 2.0,
+        "label": "Isaacman: $2.0M @ $46"
+      }
+    ],
+    "avg_cost": 63.56,
+    "total_value": 46.1,
+    "total_shares": 725152,
+    "current_price": 42.56
+  },
+  "volume_macro": {
+    "quarters": [
+      "Q1 2023",
+      "Q2 2023",
+      "Q3 2023",
+      "Q4 2023",
+      "Q1 2024",
+      "Q2 2024",
+      "Q3 2024",
+      "Q4 2024",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025",
+      "Q4 2025"
+    ],
+    "four_yoy": [
+      66.4,
+      58.6,
+      35.4,
+      55.1,
+      49.8,
+      49.6,
+      55.9,
+      49.2,
+      34.7,
+      24.9,
+      25.7,
+      23.6
+    ],
+    "revpar_yoy": [
+      8,
+      5,
+      3,
+      2,
+      3,
+      2,
+      1,
+      1,
+      0,
+      -1,
+      -1,
+      -1
+    ],
+    "restaurant_yoy": [
+      7,
+      8,
+      7,
+      6,
+      5,
+      5,
+      4,
+      3,
+      3,
+      2,
+      2,
+      2
+    ]
+  },
+  "gateway_conversion": {
+    "gateway_vol_B": 150,
+    "e2e_vol_B": 209,
+    "gateway_bps": 15,
+    "e2e_bps": 62,
+    "scenarios": [
+      {
+        "name": "Bear",
+        "conv_pct": 0.1,
+        "incr_rev_B": 0.07,
+        "incr_ebitda_B": 0.04
+      },
+      {
+        "name": "Base",
+        "conv_pct": 0.2,
+        "incr_rev_B": 0.14,
+        "incr_ebitda_B": 0.07
+      },
+      {
+        "name": "Bull",
+        "conv_pct": 0.35,
+        "incr_rev_B": 0.25,
+        "incr_ebitda_B": 0.12
+      }
+    ]
+  },
+  "stock_price_samples": []
+}

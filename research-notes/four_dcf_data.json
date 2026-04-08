@@ -1,0 +1,575 @@
+{
+  "metadata": {
+    "company": "Shift4 Payments, Inc.",
+    "ticker": "FOUR",
+    "model_date": "April 2026",
+    "analyst_note": "Investment pitch DCF for competition judged by Philippe Laffont, Dan Loeb, Ken Hao",
+    "source": "User-provided FCF projections; standard DCF methodology",
+    "current_price": 42.56,
+    "current_ev_M": 8000,
+    "current_shares_fd_M": 101,
+    "current_net_debt_M": 4000
+  },
+  "inputs": {
+    "fcf_actual": {
+      "FY2025A": 499
+    },
+    "fcf_projections_M": {
+      "FY2026E": 585,
+      "FY2027E": 750,
+      "FY2028E": 900,
+      "FY2029E": 1062,
+      "FY2030E": 1221
+    },
+    "growth_assumptions": {
+      "FY2026E": "implied by $585M vs $499M actual (+17.2%)",
+      "FY2027E": "implied by $750M vs $585E (+28.2%)",
+      "FY2028E": "~20% growth assumption",
+      "FY2029E": "~18% growth assumption",
+      "FY2030E": "~15% growth assumption"
+    },
+    "shares_common_M": 73.5,
+    "shares_fd_M": 83.5,
+    "net_debt_M": 3500,
+    "net_debt_note": "end of FY2026E after buybacks and debt paydown"
+  },
+  "base_case": {
+    "wacc": "10%",
+    "terminal_growth_rate": "3%",
+    "projection_period": "FY2026E\u2013FY2030E",
+    "discounting_convention": "end-of-year; t=1 for FY2026E through t=5 for FY2030E",
+    "fcf_schedule": [
+      {
+        "year": "FY2026E",
+        "t": 1,
+        "fcf_M": 585,
+        "yoy_growth_pct": 17.2,
+        "discount_factor": 0.909091,
+        "pv_fcf_M": 531.82
+      },
+      {
+        "year": "FY2027E",
+        "t": 2,
+        "fcf_M": 750,
+        "yoy_growth_pct": 28.2,
+        "discount_factor": 0.826446,
+        "pv_fcf_M": 619.83
+      },
+      {
+        "year": "FY2028E",
+        "t": 3,
+        "fcf_M": 900,
+        "yoy_growth_pct": 20.0,
+        "discount_factor": 0.751315,
+        "pv_fcf_M": 676.18
+      },
+      {
+        "year": "FY2029E",
+        "t": 4,
+        "fcf_M": 1062,
+        "yoy_growth_pct": 18.0,
+        "discount_factor": 0.683013,
+        "pv_fcf_M": 725.36
+      },
+      {
+        "year": "FY2030E",
+        "t": 5,
+        "fcf_M": 1221,
+        "yoy_growth_pct": 15.0,
+        "discount_factor": 0.620921,
+        "pv_fcf_M": 758.14
+      }
+    ],
+    "sum_pv_fcfs_M": 3311.33,
+    "terminal_value_M": 17966.14,
+    "terminal_value_formula": "FCF_2030 \u00d7 (1+TGR) / (WACC - TGR) = 1221 \u00d7 1.03 / 0.07",
+    "pv_terminal_value_M": 11155.56,
+    "tv_pct_of_ev": 77.1,
+    "enterprise_value_M": 14466.89,
+    "less_net_debt_M": 3500,
+    "equity_value_M": 10966.89,
+    "implied_price_per_common_share": 149.21,
+    "implied_price_per_fd_share": 131.34,
+    "upside_to_current_price_common_pct": 250.6,
+    "upside_to_current_price_fd_pct": 208.6
+  },
+  "sensitivity_matrix": {
+    "description": "5\u00d75 grid: WACC (rows) \u00d7 Terminal Growth Rate (cols). Values = implied price per common share.",
+    "wacc_values": [
+      "8%",
+      "9%",
+      "10%",
+      "11%",
+      "12%"
+    ],
+    "tgr_values": [
+      "2%",
+      "2.5%",
+      "3%",
+      "3.5%",
+      "4%"
+    ],
+    "matrix_common_share_price": [
+      [
+        192.35,
+        210.85,
+        233.05,
+        260.18,
+        294.1
+      ],
+      [
+        156.08,
+        169.02,
+        184.11,
+        201.94,
+        223.33
+      ],
+      [
+        128.95,
+        138.4,
+        149.21,
+        161.68,
+        176.22
+      ],
+      [
+        107.89,
+        115.05,
+        123.09,
+        132.21,
+        142.63
+      ],
+      [
+        91.09,
+        96.65,
+        102.82,
+        109.72,
+        117.49
+      ]
+    ],
+    "matrix_fd_share_price": [
+      [
+        169.31,
+        185.6,
+        205.14,
+        229.02,
+        258.88
+      ],
+      [
+        137.39,
+        148.78,
+        162.06,
+        177.75,
+        196.59
+      ],
+      [
+        113.51,
+        121.83,
+        131.34,
+        142.32,
+        155.12
+      ],
+      [
+        94.97,
+        101.27,
+        108.35,
+        116.38,
+        125.55
+      ],
+      [
+        80.18,
+        85.08,
+        90.51,
+        96.58,
+        103.42
+      ]
+    ],
+    "matrix_ev_M": [
+      [
+        17637.6,
+        18997.4,
+        20629.2,
+        22623.5,
+        25116.5
+      ],
+      [
+        14972.2,
+        15922.8,
+        17031.7,
+        18342.3,
+        19915.0
+      ],
+      [
+        12977.7,
+        13672.6,
+        14466.9,
+        15383.3,
+        16452.5
+      ],
+      [
+        11430.2,
+        11955.9,
+        12547.3,
+        13217.5,
+        13983.5
+      ],
+      [
+        10195.4,
+        10603.8,
+        11057.6,
+        11564.8,
+        12135.3
+      ]
+    ],
+    "cells": [
+      {
+        "wacc": "8%",
+        "wacc_decimal": 0.08,
+        "tgr": "2%",
+        "tgr_decimal": 0.02,
+        "implied_price_common": 192.35,
+        "implied_price_fd": 169.31,
+        "implied_ev_M": 17637.6,
+        "upside_pct": 352.0,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "8%",
+        "wacc_decimal": 0.08,
+        "tgr": "2.5%",
+        "tgr_decimal": 0.025,
+        "implied_price_common": 210.85,
+        "implied_price_fd": 185.6,
+        "implied_ev_M": 18997.4,
+        "upside_pct": 395.4,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "8%",
+        "wacc_decimal": 0.08,
+        "tgr": "3%",
+        "tgr_decimal": 0.03,
+        "implied_price_common": 233.05,
+        "implied_price_fd": 205.14,
+        "implied_ev_M": 20629.2,
+        "upside_pct": 447.6,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "8%",
+        "wacc_decimal": 0.08,
+        "tgr": "3.5%",
+        "tgr_decimal": 0.035,
+        "implied_price_common": 260.18,
+        "implied_price_fd": 229.02,
+        "implied_ev_M": 22623.5,
+        "upside_pct": 511.3,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "8%",
+        "wacc_decimal": 0.08,
+        "tgr": "4%",
+        "tgr_decimal": 0.04,
+        "implied_price_common": 294.1,
+        "implied_price_fd": 258.88,
+        "implied_ev_M": 25116.5,
+        "upside_pct": 591.0,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "9%",
+        "wacc_decimal": 0.09,
+        "tgr": "2%",
+        "tgr_decimal": 0.02,
+        "implied_price_common": 156.08,
+        "implied_price_fd": 137.39,
+        "implied_ev_M": 14972.2,
+        "upside_pct": 266.7,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "9%",
+        "wacc_decimal": 0.09,
+        "tgr": "2.5%",
+        "tgr_decimal": 0.025,
+        "implied_price_common": 169.02,
+        "implied_price_fd": 148.78,
+        "implied_ev_M": 15922.8,
+        "upside_pct": 297.1,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "9%",
+        "wacc_decimal": 0.09,
+        "tgr": "3%",
+        "tgr_decimal": 0.03,
+        "implied_price_common": 184.11,
+        "implied_price_fd": 162.06,
+        "implied_ev_M": 17031.7,
+        "upside_pct": 332.6,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "9%",
+        "wacc_decimal": 0.09,
+        "tgr": "3.5%",
+        "tgr_decimal": 0.035,
+        "implied_price_common": 201.94,
+        "implied_price_fd": 177.75,
+        "implied_ev_M": 18342.3,
+        "upside_pct": 374.5,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "9%",
+        "wacc_decimal": 0.09,
+        "tgr": "4%",
+        "tgr_decimal": 0.04,
+        "implied_price_common": 223.33,
+        "implied_price_fd": 196.59,
+        "implied_ev_M": 19915.0,
+        "upside_pct": 424.7,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "10%",
+        "wacc_decimal": 0.1,
+        "tgr": "2%",
+        "tgr_decimal": 0.02,
+        "implied_price_common": 128.95,
+        "implied_price_fd": 113.51,
+        "implied_ev_M": 12977.7,
+        "upside_pct": 203.0,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "10%",
+        "wacc_decimal": 0.1,
+        "tgr": "2.5%",
+        "tgr_decimal": 0.025,
+        "implied_price_common": 138.4,
+        "implied_price_fd": 121.83,
+        "implied_ev_M": 13672.6,
+        "upside_pct": 225.2,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "10%",
+        "wacc_decimal": 0.1,
+        "tgr": "3%",
+        "tgr_decimal": 0.03,
+        "implied_price_common": 149.21,
+        "implied_price_fd": 131.34,
+        "implied_ev_M": 14466.9,
+        "upside_pct": 250.6,
+        "is_base_case": true,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "10%",
+        "wacc_decimal": 0.1,
+        "tgr": "3.5%",
+        "tgr_decimal": 0.035,
+        "implied_price_common": 161.68,
+        "implied_price_fd": 142.32,
+        "implied_ev_M": 15383.3,
+        "upside_pct": 279.9,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "10%",
+        "wacc_decimal": 0.1,
+        "tgr": "4%",
+        "tgr_decimal": 0.04,
+        "implied_price_common": 176.22,
+        "implied_price_fd": 155.12,
+        "implied_ev_M": 16452.5,
+        "upside_pct": 314.1,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "11%",
+        "wacc_decimal": 0.11,
+        "tgr": "2%",
+        "tgr_decimal": 0.02,
+        "implied_price_common": 107.89,
+        "implied_price_fd": 94.97,
+        "implied_ev_M": 11430.2,
+        "upside_pct": 153.5,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "11%",
+        "wacc_decimal": 0.11,
+        "tgr": "2.5%",
+        "tgr_decimal": 0.025,
+        "implied_price_common": 115.05,
+        "implied_price_fd": 101.27,
+        "implied_ev_M": 11955.9,
+        "upside_pct": 170.3,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "11%",
+        "wacc_decimal": 0.11,
+        "tgr": "3%",
+        "tgr_decimal": 0.03,
+        "implied_price_common": 123.09,
+        "implied_price_fd": 108.35,
+        "implied_ev_M": 12547.3,
+        "upside_pct": 189.2,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "11%",
+        "wacc_decimal": 0.11,
+        "tgr": "3.5%",
+        "tgr_decimal": 0.035,
+        "implied_price_common": 132.21,
+        "implied_price_fd": 116.38,
+        "implied_ev_M": 13217.5,
+        "upside_pct": 210.6,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "11%",
+        "wacc_decimal": 0.11,
+        "tgr": "4%",
+        "tgr_decimal": 0.04,
+        "implied_price_common": 142.63,
+        "implied_price_fd": 125.55,
+        "implied_ev_M": 13983.5,
+        "upside_pct": 235.1,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "12%",
+        "wacc_decimal": 0.12,
+        "tgr": "2%",
+        "tgr_decimal": 0.02,
+        "implied_price_common": 91.09,
+        "implied_price_fd": 80.18,
+        "implied_ev_M": 10195.4,
+        "upside_pct": 114.0,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "12%",
+        "wacc_decimal": 0.12,
+        "tgr": "2.5%",
+        "tgr_decimal": 0.025,
+        "implied_price_common": 96.65,
+        "implied_price_fd": 85.08,
+        "implied_ev_M": 10603.8,
+        "upside_pct": 127.1,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "12%",
+        "wacc_decimal": 0.12,
+        "tgr": "3%",
+        "tgr_decimal": 0.03,
+        "implied_price_common": 102.82,
+        "implied_price_fd": 90.51,
+        "implied_ev_M": 11057.6,
+        "upside_pct": 141.6,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "12%",
+        "wacc_decimal": 0.12,
+        "tgr": "3.5%",
+        "tgr_decimal": 0.035,
+        "implied_price_common": 109.72,
+        "implied_price_fd": 96.58,
+        "implied_ev_M": 11564.8,
+        "upside_pct": 157.8,
+        "is_base_case": false,
+        "is_below_current_price": false
+      },
+      {
+        "wacc": "12%",
+        "wacc_decimal": 0.12,
+        "tgr": "4%",
+        "tgr_decimal": 0.04,
+        "implied_price_common": 117.49,
+        "implied_price_fd": 103.42,
+        "implied_ev_M": 12135.3,
+        "upside_pct": 176.1,
+        "is_base_case": false,
+        "is_below_current_price": false
+      }
+    ],
+    "current_price": 42.56
+  },
+  "key_insights": {
+    "pct_cells_implying_upside": 100.0,
+    "cells_above_current_price": 25,
+    "cells_below_current_price": 0,
+    "total_cells": 25,
+    "base_case_common_price": 149.21,
+    "base_case_fd_price": 131.34,
+    "base_case_upside_pct": 250.6,
+    "base_case_ev_M": 14466.89,
+    "bull_case": {
+      "wacc": "8%",
+      "tgr": "4%",
+      "implied_price_common": 294.1,
+      "implied_price_fd": 258.88,
+      "implied_ev_M": 25116.5,
+      "upside_pct": 591.0
+    },
+    "bear_floor": {
+      "wacc": "12%",
+      "tgr": "2%",
+      "implied_price_common": 91.09,
+      "implied_price_fd": 80.18,
+      "implied_ev_M": 10195.42,
+      "downside_pct": 114.0
+    },
+    "pitch_takeaways": [
+      "100% of all WACC/TGR scenarios imply upside from current $42.56",
+      "Base case (10% WACC / 3% TGR) implies $149/share (+251% upside) on common",
+      "Even at 12% WACC / 2% TGR (most bearish), implied price is $91/share",
+      "Bull case (8% WACC / 4% TGR): $294/share implied",
+      "Current EV of ~$8B implies paying 13.7x FY2026E FCF; base case EV is $14.5B",
+      "TV represents 77.1% of base case EV \u2014 typical for high-growth payments platform"
+    ]
+  },
+  "verification": {
+    "base_case_math_check": {
+      "pv_2026": "585 / (1.10)^1 = 531.82",
+      "pv_2027": "750 / (1.10)^2 = 619.83",
+      "pv_2028": "900 / (1.10)^3 = 676.18",
+      "pv_2029": "1062 / (1.10)^4 = 725.36",
+      "pv_2030": "1221 / (1.10)^5 = 758.14",
+      "tv": "1221 * 1.03 / 0.07 = 17966.14",
+      "pv_tv": "17966.14 / (1.10)^5 = 11155.56",
+      "ev": "14466.90",
+      "equity": "EV - 3500 = 10966.90",
+      "price_common": "Equity / 73.5M = 149.21"
+    }
+  }
+}

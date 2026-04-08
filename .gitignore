@@ -1,0 +1,11 @@
+# Backups
+*_backup.xlsx
+*.backup
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.temp
